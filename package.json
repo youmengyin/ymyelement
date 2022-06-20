@@ -1,25 +1,37 @@
 {
   "name": "ymyelement",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "lint:vue": "vue-cli-service lint",
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "eslint --fix --ext .js,vue src"
   },
   "dependencies": {
+    "chalk": "^5.0.1",
     "vue": "^3.2.25"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/cli-plugin-eslint": "^5.0.6",
+    "@vue/eslint-config-typescript": "^11.0.0",
     "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^9.1.0",
     "husky": "^8.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
     "sass": "^1.52.2",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.34.7"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }
