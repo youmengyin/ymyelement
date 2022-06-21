@@ -16,3 +16,8 @@ vue add @vue/cli-plugin-eslint
 npx husky add .husky/pre-commit "npm run lint"
 ```
 
+lint-staged 只校验暂存区
+pettier配合eslint优化代码格式
+
+`npm install -D prettier eslint-plugin-prettier @vue/eslint-config-prettier`
+
