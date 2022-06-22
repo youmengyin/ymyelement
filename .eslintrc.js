@@ -1,21 +1,23 @@
 module.exports = {
-    root: true,
-    env: {
-      browser: true,
-      es2021: true,
-      node: true,
-      jest: true,
+    "env": {
+        "browser": true,
+        "es2021": true,
+        'vue/setup-compiler-macros': true
     },
-    extends: [
-      'plugin:vue/vue3-recommended',
-      'eslint:recommended',
-      '@vue/typescript/recommended'
+    "extends": [
+        "eslint:recommended",
+        'plugin:vue/vue3-recommended',
+        '@vue/typescript/recommended'
     ],
-    parserOptions: {
-      ecmaVersion: 2021,
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
     },
-    env:{
-      // https://eslint.vuejs.org/user-guide/#faq
-      'vue/setup-compiler-macros': true
+    "plugins": [
+        "vue",
+        "@typescript-eslint"
+    ],
+    "rules": {
     }
-  }
+}
