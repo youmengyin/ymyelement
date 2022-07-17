@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 note.md
+yarn.lock
 
 # Editor directories and files
 .vscode/*
