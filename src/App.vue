@@ -1,24 +1,62 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png"
-  >
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <QXContainer>
+    <QXAside width="200px">
+      Aside
+    </QXAside>
+    <QXContainer>
+      <QXHeader>Header</QXHeader>
+      <QXMain>Main</QXMain>
+      <QXFooter>Footer</QXFooter>
+    </QXContainer>
+  </QXContainer>
+
+  <hr>
+  <QXContainer>
+    <QXHeader>Header</QXHeader>
+    <QXContainer>
+      <QXAside width="200px">
+        Aside
+      </QXAside>
+      <QXContainer>
+        <QXMain>Main</QXMain>
+        <QXFooter>Footer</QXFooter>
+      </QXContainer>
+    </QXContainer>
+  </QXContainer>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  width:1000px;
+  margin:10px auto;
+}
+.qx-header,
+.qx-footer {
+  background-color: #b3c0d1;
+  color: #333;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  line-height: 60px;
+}
+.qx-aside {
+  background-color: #d3dce6;
+  color: #333;
+  text-align: center;
+  line-height: 200px;
+}
+.qx-main {
+  background-color: #e9eef3;
+  color: #333;
+  text-align: center;
+  line-height: 160px;
+}
+body > .qx-container {
+  margin-bottom: 40px;
+}
+.qx-container:nth-child(5) .qx-aside,
+.qx-container:nth-child(6) .qx-aside {
+  line-height: 260px;
+}
+.qx-container:nth-child(7) .qx-aside {
+  line-height: 320px;
 }
 </style>
