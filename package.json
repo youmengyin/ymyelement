@@ -6,7 +6,14 @@
     "build": "vue-tsc --noEmit && vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "lint": "eslint --fix --ext .js,.vue src"
+    "prepare": "husky install",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint --fix --ext .js,.vue src",
+    "lint-staged": "lint-staged"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -16,6 +23,7 @@
     "@typescript-eslint/parser": "^5.29.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/eslint-config-typescript": "^11.0.0",
+    "@vue/test-utils": "^2.0.2",
     "chalk": "^5.0.1",
     "eslint": "^8.17.0",
     "eslint-plugin-html": "^6.2.0",
@@ -25,14 +33,10 @@
     "sass": "^1.52.2",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
+    "vitest": "^0.18.1",
     "vue-tsc": "^0.34.7"
   },
-  "precommit": "lint-staged",
   "lint-staged": {
-    "*.js": "eslint",
-    "*.less": "stylelint",
-    "*.css": "stylelint",
-    "*.json": "jsonlint --quiet",
-    "*.md": "markdownlint --config .markdownlint.json"
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
   }
 }
