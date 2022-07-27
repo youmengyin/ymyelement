@@ -1,15 +1,14 @@
 <template>
-  <QXContainer>
-    <QXAside width="200px">
-      Aside
-    </QXAside>
-    <QXContainer>
-      <QXHeader>Header</QXHeader>
-      <QXMain>Main</QXMain>
-      <QXFooter>Footer</QXFooter>
-    </QXContainer>
-  </QXContainer>
-
+  <QXButton type="primary">
+    按钮
+  </QXButton>
+  <QXButton type="success">
+    按钮
+  </QXButton>
+  <QXButton>按钮</QXButton>
+  <QXButton size="small">
+    按钮
+  </QXButton>
   <hr>
   <QXContainer>
     <QXHeader>Header</QXHeader>

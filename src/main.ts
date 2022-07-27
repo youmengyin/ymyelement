@@ -1,4 +1,10 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import QXContainer from './components/container';
-createApp(App).use(QXContainer).mount('#app');
+import QXButton from './components/button';
+
+const app = createApp(App);
+app.config.globalProperties.$QXUI = {
+	size: 'large'
+};
+app.use(QXContainer).use(QXButton).mount('#app');
