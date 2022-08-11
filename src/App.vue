@@ -81,11 +81,13 @@ const model = reactive({
 });
 const rules = reactive({
 	username: [{
-		require: true,
+		type: 'string',
+		required: true,
 		message: "请输入用户名！"
 	}],
 	password: [{
-		require: true,
+		type: 'string',
+		required: true,
 		message: "请输入密码！"
 	}]
 });

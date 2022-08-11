@@ -36,7 +36,6 @@ defineExpose(o);
 onMounted(() => {
 	if (props.prop) {
 		emitter.on('validate', () => {
-			console.log("addFormItem", validate());
 			validate();
 		});
 		emitter.emit('addFormItem', o);
@@ -50,7 +49,9 @@ function validate() {
 	const rules = formData.rules[props.prop];
 	const values = formData.model[props.prop];
 	const schema = new Schema({ [props.prop]: rules });
-	return schema.validate({ [props.prop]: values }, (errors) => {
+	return schema.validate({ [props.prop]: values }).then((data) => {
+		error.value = '';
+	}).catch(({ errors, fields }) => {
 		if (errors) {
 			error.value = errors[0].message || "校验错误";
 		} else {

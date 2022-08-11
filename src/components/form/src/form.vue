@@ -8,7 +8,9 @@
 import {
 	PropType,
 	provide,
-	ref
+	reactive,
+	ref,
+	toRefs
 } from 'vue';
 import { key, FormItem } from '../type';
 import {
@@ -19,13 +21,15 @@ const props = defineProps({
 	rules: { type: Object as PropType < Rules> }
 });
 
-provide(key, {
-	model: props.model,
-	rules: props.rules
-});
+provide(key,
+	reactive({
+		...toRefs(props)
+	})
+);
 const items = ref<FormItem []>([]);
 
 function validate(callback: (isValid: boolean) => void) {
+	debugger;
 	const tasks = items.value.map((item) => item.validate());
 	Promise.all(tasks).then(() => {
 		callback(true);
