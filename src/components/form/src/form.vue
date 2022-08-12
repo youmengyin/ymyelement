@@ -12,24 +12,24 @@ import {
 	ref,
 	toRefs
 } from 'vue';
-import { key, FormItem } from '../type';
+import { FormItemContext, formContextKey } from "@ymy/tokens";
 import {
 	Rules
 } from 'async-validator';
+import { filterFields } from './util';
 const props = defineProps({
 	model: { type: Object, require: true },
 	rules: { type: Object as PropType < Rules> }
 });
-
-provide(key,
+const fields: FormItemContext[] = [];
+provide(formContextKey,
 	reactive({
 		...toRefs(props)
 	})
 );
-const items = ref<FormItem []>([]);
+const items = ref<FormItemContext []>([]);
 
 function validate(callback: (isValid: boolean) => void) {
-	debugger;
 	const tasks = items.value.map((item) => item.validate());
 	Promise.all(tasks).then(() => {
 		callback(true);
@@ -37,9 +37,16 @@ function validate(callback: (isValid: boolean) => void) {
 		callback(false);
 	});
 }
+function scrollToField(prop: any) {
+	const field = filterFields(fields, prop)[0];
+	if (field) {
+		field.$el?.scrollIntoView();
+	}
+}
 
 defineExpose({
-	validate
+	validate,
+	scrollToField
 });
 </script>
 <script lang='ts'>

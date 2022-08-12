@@ -2,6 +2,9 @@
   "name": "ymyelement",
   "version": "0.0.0",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "build:dev": "vue-tsc --noEmit && vite build --mode=development",
@@ -17,6 +20,8 @@
     "vue": "^3.2.0"
   },
   "dependencies": {
+    "@ymy/tokens": "workspace:*",
+    "@ymy/utils": "workspace:*",
     "async-validator": "^4.2.5",
     "mitt": "^3.0.0",
     "vue": "^3.2.25"

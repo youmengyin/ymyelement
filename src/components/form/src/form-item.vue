@@ -14,7 +14,7 @@
 <script setup lang='ts'>
 import Schema from 'async-validator';
 import { inject, onMounted, ref } from 'vue';
-import { FormItem, key } from '../type';
+import { FormItemContext, formContextKey } from "@ymy/tokens";
 import { emitter } from '../../../utils/emitter';
 
 interface Props {
@@ -26,12 +26,7 @@ const props = withDefaults(defineProps<Props>(), {
 	prop: ''
 });
 const error = ref("");
-const formData = inject(key);
-const o:FormItem = {
-	validate
-};
-
-defineExpose(o);
+const formData = inject(formContextKey);
 
 onMounted(() => {
 	if (props.prop) {
@@ -59,6 +54,12 @@ function validate() {
 		}
 	});
 }
+
+const o:FormItemContext = {
+	validate
+};
+
+defineExpose(o);
 </script>
 <script lang='ts'>
 export default {
