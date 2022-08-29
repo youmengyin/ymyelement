@@ -14,8 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
-
+@import './../../../theme-chalk/src/mixins/mixin.scss';
 @include b(main){
   display: block;
   flex: 1;

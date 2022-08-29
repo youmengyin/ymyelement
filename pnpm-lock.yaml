@@ -11,6 +11,8 @@ importers:
       '@vue/test-utils': ^2.0.2
       '@ymy/components': workspace:*
       '@ymy/docs': workspace:*
+      '@ymy/hooks': workspace:*
+      '@ymy/theme-chalk': workspace:*
       '@ymy/tokens': workspace:*
       '@ymy/utils': workspace:*
       async-validator: ^4.2.5
@@ -30,6 +32,8 @@ importers:
     dependencies:
       '@ymy/components': link:packages/components
       '@ymy/docs': link:docs
+      '@ymy/hooks': link:packages/hooks
+      '@ymy/theme-chalk': link:packages/theme-chalk
       '@ymy/tokens': link:packages/tokens
       '@ymy/utils': link:packages/utils
       async-validator: 4.2.5
@@ -63,6 +67,12 @@ importers:
       vitepress: 1.0.0-alpha.4
 
   packages/components:
+    specifiers: {}
+
+  packages/hooks:
+    specifiers: {}
+
+  packages/theme-chalk:
     specifiers: {}
 
   packages/tokens:

@@ -15,7 +15,7 @@
 import Schema from 'async-validator';
 import { inject, onMounted, ref } from 'vue';
 import { FormItemContext, formContextKey } from "@ymy/tokens";
-import { emitter } from '../../../utils/emitter';
+import { emitter } from '@ymy/utils';
 
 interface Props {
   label?: string,
@@ -63,12 +63,12 @@ defineExpose(o);
 </script>
 <script lang='ts'>
 export default {
-	name: 'QXFormItem'
+	name: 'QxFormItem'
 };
 
 </script>
 <style scoped lang ='scss'>
-@import '../../styles/mixin.scss';
+@import '../../../theme-chalk/src/mixins/mixin.scss';
 @include b(form-item){
   margin-bottom: 22px;
   label{

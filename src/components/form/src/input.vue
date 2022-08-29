@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { emitter } from '../../../utils/emitter';
+import { emitter } from '@ymy/utils';
 defineProps<{
   modelValue: string
 }>();

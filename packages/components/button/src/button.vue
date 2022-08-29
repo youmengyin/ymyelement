@@ -19,7 +19,6 @@ export default {
 <script setup lang='ts'>
 import { computed } from 'vue';
 import { useGlobalConfig } from '@ymy/hooks';
-
 interface Props {
   size?: ''| 'large' | 'default' | 'small',
   type?: '' | 'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text'
@@ -35,7 +34,7 @@ const buttonSize = computed(() => {
 </script>
 
 <style scoped lang ='scss'>
-@import '../../styles/mixin.scss';
+@import '../../../theme-chalk/src/mixins/mixin.scss';
 @include b(button){
   display: inline-block;
   line-height: 1;

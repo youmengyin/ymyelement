@@ -1,12 +1,14 @@
-import { App } from "vue";
-import QXForm from './src/form.vue';
-import QXFormItem from './src/form-item.vue';
-import QXInput from './src/input.vue';
+import Form from './src/form.vue';
+import FormItem from './src/form-item.vue';
+import Input from './src/input.vue';
+import { withInstall, withNoopInstall } from "@ymy/utils";
+export * from './type';
 
-export default {
-	install(app: App) {
-		app.component(QXForm.name, QXForm);
-		app.component(QXFormItem.name, QXFormItem);
-		app.component(QXInput.name, QXInput);
-	}
-};
+export const QxForm = withInstall(Form, {
+	FormItem,
+	Input
+});
+
+export default QxForm;
+export const QxInput = withNoopInstall(Input);
+export const QXFormItem = withNoopInstall(FormItem);

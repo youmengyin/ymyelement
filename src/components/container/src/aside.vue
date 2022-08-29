@@ -1,14 +1,14 @@
 <template>
-  <header
+  <aside
     class="qx-aside"
     :style="{width}"
   >
     <slot />
-  </header>
+  </aside>
 </template>
 <script lang="ts">
 export default {
-	name: "QXAside"
+	name: "QxAside"
 };
 </script>
 <script setup lang='ts'>
@@ -16,7 +16,7 @@ interface Props{
   width: string;
 }
 withDefaults(defineProps<Props>(), {
-	width: '100px'
+	width: '200px'
 });
 
 </script>
@@ -24,9 +24,10 @@ withDefaults(defineProps<Props>(), {
 <style lang="scss">
 @import '../../styles/mixin.scss';
 
-@include b(aside){
+@include b(aside) {
   overflow: auto;
   box-sizing: border-box;
   flex-shrink: 0;
+  width: 300px;
 }
 </style>

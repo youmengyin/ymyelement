@@ -24,6 +24,8 @@
     "@ymy/utils": "workspace:*",
     "@ymy/docs": "workspace:*",
     "@ymy/components": "workspace:*",
+    "@ymy/hooks": "workspace:*",
+    "@ymy/theme-chalk": "workspace:*",
     "async-validator": "^4.2.5",
     "mitt": "^3.0.0",
     "vue": "^3.2.25"

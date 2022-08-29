@@ -1,14 +1,14 @@
 <template>
-  <header
-    class="qx-header"
+  <footer
+    class="qx-footer"
     :style="{height}"
   >
     <slot />
-  </header>
+  </footer>
 </template>
 <script lang="ts">
 export default {
-	name: "QxHeader"
+	name: "QxFooter"
 };
 </script>
 <script setup lang='ts'>
@@ -22,10 +22,9 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
-
-@include b(header){
-  padding: $--header-padding;
+@import '../../../theme-chalk/src/mixins/mixin.scss';
+@include b(footer){
+  padding: $--footer-padding;
   box-sizing: border-box;
   flex-shrink: 0;
 }

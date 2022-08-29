@@ -1,0 +1,9 @@
+{
+    "name": "@ymy/theme-chalk",
+    "private": true,
+    "license": "MIT",
+    "main": "index.scss",
+    "peerDependencies": {
+      "vue": "^3.2.0"
+    }
+}

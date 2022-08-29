@@ -1,14 +1,14 @@
 <template>
-  <header
+  <footer
     class="qx-footer"
     :style="{height}"
   >
     <slot />
-  </header>
+  </footer>
 </template>
 <script lang="ts">
 export default {
-	name: "QXFooter"
+	name: "QxFooter"
 };
 </script>
 <script setup lang='ts'>

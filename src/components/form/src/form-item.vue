@@ -15,7 +15,7 @@
 import Schema from 'async-validator';
 import { inject, onMounted, ref } from 'vue';
 import { FormItemContext, formContextKey } from "@ymy/tokens";
-import { emitter } from '../../../utils/emitter';
+import { emitter } from '@ymy/utils';
 
 interface Props {
   label?: string,

@@ -1,32 +1,32 @@
 <template>
-  <header
-    class="qx-header"
-    :style="{height}"
+  <aside
+    class="qx-aside"
+    :style="{width}"
   >
     <slot />
-  </header>
+  </aside>
 </template>
 <script lang="ts">
 export default {
-	name: "QxHeader"
+	name: "QxAside"
 };
 </script>
 <script setup lang='ts'>
 interface Props{
-  height?: string;
+  width: string;
 }
 withDefaults(defineProps<Props>(), {
-	height: '60px'
+	width: '200px'
 });
 
 </script>
 
 <style lang="scss">
-@import '../../styles/mixin.scss';
-
-@include b(header){
-  padding: $--header-padding;
+@import '../../../theme-chalk/src/mixins/mixin.scss';
+@include b(aside) {
+  overflow: auto;
   box-sizing: border-box;
   flex-shrink: 0;
+  width: 300px;
 }
 </style>

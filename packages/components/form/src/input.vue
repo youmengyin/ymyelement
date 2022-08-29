@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { emitter } from '../../../utils/emitter';
+import { emitter } from '@ymy/utils';
 defineProps<{
   modelValue: string
 }>();
@@ -26,12 +26,12 @@ function onInput(e: Event) {
 
 <script lang="ts">
 export default {
-	name: 'QXInput'
+	name: 'QxInput'
 };
 
 </script>
 <style scoped lang ='scss'>
-@import '../../styles/mixin.scss';
+@import '../../../theme-chalk/src/mixins/mixin.scss';
 @include b(input){
     @include m(inner){
       -webkit-appearance: none;

@@ -4,20 +4,20 @@
 
 `type` 属性配置不同的按钮类型
 
-<tyh-button>默认按钮</tyh-button>
-<tyh-button type="primary">主要按钮</tyh-button>
-<tyh-button type="success">成功按钮</tyh-button>
-<tyh-button type="danger">危险按钮</tyh-button>
-<tyh-button type="warning">警告按钮</tyh-button>
+<qx-button>默认按钮</qx-button>
+<qx-button type="primary">主要按钮</qx-button>
+<qx-button type="success">成功按钮</qx-button>
+<qx-button type="danger">危险按钮</qx-button>
+<qx-button type="warning">警告按钮</qx-button>
 
 ::: details 显示代码
 
 ```html
-<tyh-button>默认按钮</tyh-button>
-<tyh-button type="primary">主要按钮</tyh-button>
-<tyh-button type="success">成功按钮</tyh-button>
-<tyh-button type="danger">危险按钮</tyh-button>
-<tyh-button type="warning">警告按钮</tyh-button>
+<qx-button>默认按钮</qx-button>
+<qx-button type="primary">主要按钮</qx-button>
+<qx-button type="success">成功按钮</qx-button>
+<qx-button type="danger">危险按钮</qx-button>
+<qx-button type="warning">警告按钮</qx-button>
 ```
 
 :::
@@ -26,20 +26,20 @@
 
 `simple` 属性可以配置简约按钮
 
-<tyh-button simple>默认按钮</tyh-button>
-<tyh-button simple type="primary">主要按钮</tyh-button>
-<tyh-button simple type="success">成功按钮</tyh-button>
-<tyh-button simple type="danger">危险按钮</tyh-button>
-<tyh-button simple type="warning">警告按钮</tyh-button>
+<qx-button simple>默认按钮</qx-button>
+<qx-button simple type="primary">主要按钮</qx-button>
+<qx-button simple type="success">成功按钮</qx-button>
+<qx-button simple type="danger">危险按钮</qx-button>
+<qx-button simple type="warning">警告按钮</qx-button>
 
 ::: details 显示代码
 
 ```html
-<tyh-button simple>默认按钮</tyh-button>
-<tyh-button simple type="primary">主要按钮</tyh-button>
-<tyh-button simple type="success">成功按钮</tyh-button>
-<tyh-button simple type="danger">危险按钮</tyh-button>
-<tyh-button simple type="warning">警告按钮</tyh-button>
+<qx-button simple>默认按钮</qx-button>
+<qx-button simple type="primary">主要按钮</qx-button>
+<qx-button simple type="success">成功按钮</qx-button>
+<qx-button simple type="danger">危险按钮</qx-button>
+<qx-button simple type="warning">警告按钮</qx-button>
 ```
 
 :::
@@ -48,20 +48,20 @@
 
 `icon` 属性可以配置图标按钮
 
-<tyh-button icon="tyh-ui-setting-filling">设置</tyh-button>
-<tyh-button icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
-<tyh-button icon="tyh-ui-fabulous" type="success" />
-<tyh-button icon="tyh-ui-discount" type="danger" />
-<tyh-button icon="tyh-ui-chart-bar" type="warning" />
+<qx-button icon="qx-ui-setting-filling">设置</qx-button>
+<qx-button icon="qx-ui-qxui" type="primary">qx-ui</qx-button>
+<qx-button icon="qx-ui-fabulous" type="success" />
+<qx-button icon="qx-ui-discount" type="danger" />
+<qx-button icon="qx-ui-chart-bar" type="warning" />
 
 ::: details 显示代码
 
 ```html
-<tyh-button icon="tyh-ui-setting-filling">设置</tyh-button>
-<tyh-button icon="tyh-ui-tyhui" type="primary">tyh-ui</tyh-button>
-<tyh-button icon="tyh-ui-fabulous" type="success" />
-<tyh-button icon="tyh-ui-discount" type="danger" />
-<tyh-button icon="tyh-ui-chart-bar" type="warning" />
+<qx-button icon="qx-ui-setting-filling">设置</qx-button>
+<qx-button icon="qx-ui-qxui" type="primary">qx-ui</qx-button>
+<qx-button icon="qx-ui-fabulous" type="success" />
+<qx-button icon="qx-ui-discount" type="danger" />
+<qx-button icon="qx-ui-chart-bar" type="warning" />
 ```
 
 :::
@@ -70,34 +70,34 @@
 
 `disabled` 属性可以配置禁用状态
 
-<tyh-button disabled>默认按钮</tyh-button>
-<tyh-button disabled type="primary">主要按钮</tyh-button>
-<tyh-button disabled type="success">成功按钮</tyh-button>
-<tyh-button disabled type="danger">危险按钮</tyh-button>
-<tyh-button disabled type="warning">警告按钮</tyh-button>
+<qx-button disabled>默认按钮</qx-button>
+<qx-button disabled type="primary">主要按钮</qx-button>
+<qx-button disabled type="success">成功按钮</qx-button>
+<qx-button disabled type="danger">危险按钮</qx-button>
+<qx-button disabled type="warning">警告按钮</qx-button>
 
 <br />
 
-<tyh-button simple disabled>默认按钮</tyh-button>
-<tyh-button simple disabled type="primary">主要按钮</tyh-button>
-<tyh-button simple disabled type="success">成功按钮</tyh-button>
-<tyh-button simple disabled type="danger">危险按钮</tyh-button>
-<tyh-button simple disabled type="warning">警告按钮</tyh-button>
+<qx-button simple disabled>默认按钮</qx-button>
+<qx-button simple disabled type="primary">主要按钮</qx-button>
+<qx-button simple disabled type="success">成功按钮</qx-button>
+<qx-button simple disabled type="danger">危险按钮</qx-button>
+<qx-button simple disabled type="warning">警告按钮</qx-button>
 
 ::: details 显示代码
 
 ```html
-<tyh-button disabled>默认按钮</tyh-button>
-<tyh-button disabled type="primary">主要按钮</tyh-button>
-<tyh-button disabled type="success">成功按钮</tyh-button>
-<tyh-button disabled type="danger">危险按钮</tyh-button>
-<tyh-button disabled type="warning">警告按钮</tyh-button>
+<qx-button disabled>默认按钮</qx-button>
+<qx-button disabled type="primary">主要按钮</qx-button>
+<qx-button disabled type="success">成功按钮</qx-button>
+<qx-button disabled type="danger">危险按钮</qx-button>
+<qx-button disabled type="warning">警告按钮</qx-button>
 
-<tyh-button simple disabled>默认按钮</tyh-button>
-<tyh-button simple disabled type="primary">主要按钮</tyh-button>
-<tyh-button simple disabled type="success">成功按钮</tyh-button>
-<tyh-button simple disabled type="danger">危险按钮</tyh-button>
-<tyh-button simple disabled type="warning">警告按钮</tyh-button>
+<qx-button simple disabled>默认按钮</qx-button>
+<qx-button simple disabled type="primary">主要按钮</qx-button>
+<qx-button simple disabled type="success">成功按钮</qx-button>
+<qx-button simple disabled type="danger">危险按钮</qx-button>
+<qx-button simple disabled type="warning">警告按钮</qx-button>
 ```
 
 :::
@@ -108,86 +108,86 @@
 
 `square` 属性可以配置方形按钮
 
-<tyh-button round>默认按钮</tyh-button>
-<tyh-button round type="primary">主要按钮</tyh-button>
-<tyh-button round type="success">成功按钮</tyh-button>
-<tyh-button round type="danger">危险按钮</tyh-button>
-<tyh-button round type="warning">警告按钮</tyh-button>
+<qx-button round>默认按钮</qx-button>
+<qx-button round type="primary">主要按钮</qx-button>
+<qx-button round type="success">成功按钮</qx-button>
+<qx-button round type="danger">危险按钮</qx-button>
+<qx-button round type="warning">警告按钮</qx-button>
 
 <br />
 
-<tyh-button square>默认按钮</tyh-button>
-<tyh-button square type="primary">主要按钮</tyh-button>
-<tyh-button square type="success">成功按钮</tyh-button>
-<tyh-button square type="danger">危险按钮</tyh-button>
-<tyh-button square type="warning">警告按钮</tyh-button>
+<qx-button square>默认按钮</qx-button>
+<qx-button square type="primary">主要按钮</qx-button>
+<qx-button square type="success">成功按钮</qx-button>
+<qx-button square type="danger">危险按钮</qx-button>
+<qx-button square type="warning">警告按钮</qx-button>
 
 ::: details 显示代码
 
 ```html
-<tyh-button round>默认按钮</tyh-button>
-<tyh-button round type="primary">主要按钮</tyh-button>
-<tyh-button round type="success">成功按钮</tyh-button>
-<tyh-button round type="danger">危险按钮</tyh-button>
-<tyh-button round type="warning">警告按钮</tyh-button>
+<qx-button round>默认按钮</qx-button>
+<qx-button round type="primary">主要按钮</qx-button>
+<qx-button round type="success">成功按钮</qx-button>
+<qx-button round type="danger">危险按钮</qx-button>
+<qx-button round type="warning">警告按钮</qx-button>
 
-<tyh-button square>默认按钮</tyh-button>
-<tyh-button square type="primary">主要按钮</tyh-button>
-<tyh-button square type="success">成功按钮</tyh-button>
-<tyh-button square type="danger">危险按钮</tyh-button>
-<tyh-button square type="warning">警告按钮</tyh-button>
+<qx-button square>默认按钮</qx-button>
+<qx-button square type="primary">主要按钮</qx-button>
+<qx-button square type="success">成功按钮</qx-button>
+<qx-button square type="danger">危险按钮</qx-button>
+<qx-button square type="warning">警告按钮</qx-button>
 ```
 
 :::
 
 ## 按钮组
 
-使用 `tyh-button-group` 标签来嵌套按钮
+使用 `qx-button-group` 标签来嵌套按钮
 
-<tyh-button-group>
-  <tyh-button type="primary">上一页</tyh-button>
-  <tyh-button type="primary">下一页</tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button type="primary">上一页</qx-button>
+  <qx-button type="primary">下一页</qx-button>
+</qx-button-group>
 
-<tyh-button-group>
-  <tyh-button simple type="primary">左</tyh-button>
-  <tyh-button simple type="success">右</tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button simple type="primary">左</qx-button>
+  <qx-button simple type="success">右</qx-button>
+</qx-button-group>
 
-<tyh-button-group>
-  <tyh-button icon="tyh-ui-arrow-left-filling" type="primary"></tyh-button>
-  <tyh-button icon="tyh-ui-arrow-right-filling" type="success"></tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button icon="qx-ui-arrow-left-filling" type="primary"></qx-button>
+  <qx-button icon="qx-ui-arrow-right-filling" type="success"></qx-button>
+</qx-button-group>
 
-<tyh-button-group>
-  <tyh-button type="primary">左</tyh-button>
-  <tyh-button type="success">中</tyh-button>
-  <tyh-button type="primary">右</tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button type="primary">左</qx-button>
+  <qx-button type="success">中</qx-button>
+  <qx-button type="primary">右</qx-button>
+</qx-button-group>
 
 ::: details 显示代码
 
 ```html
-<tyh-button-group>
-  <tyh-button type="primary">上一页</tyh-button>
-  <tyh-button type="primary">下一页</tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button type="primary">上一页</qx-button>
+  <qx-button type="primary">下一页</qx-button>
+</qx-button-group>
 
-<tyh-button-group>
-  <tyh-button simple type="primary">左</tyh-button>
-  <tyh-button simple type="success">右</tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button simple type="primary">左</qx-button>
+  <qx-button simple type="success">右</qx-button>
+</qx-button-group>
 
-<tyh-button-group>
-  <tyh-button icon="tyh-ui-arrow-left-filling" type="primary"></tyh-button>
-  <tyh-button icon="tyh-ui-arrow-right-filling" type="success"></tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button icon="qx-ui-arrow-left-filling" type="primary"></qx-button>
+  <qx-button icon="qx-ui-arrow-right-filling" type="success"></qx-button>
+</qx-button-group>
 
-<tyh-button-group>
-  <tyh-button type="primary">左</tyh-button>
-  <tyh-button type="success">中</tyh-button>
-  <tyh-button type="primary">右</tyh-button>
-</tyh-button-group>
+<qx-button-group>
+  <qx-button type="primary">左</qx-button>
+  <qx-button type="success">中</qx-button>
+  <qx-button type="primary">右</qx-button>
+</qx-button-group>
 ```
 
 :::
@@ -196,30 +196,30 @@
 
 `size` 属性可以配置按钮尺寸
 
-<tyh-button size="mini" type="primary">小型按钮</tyh-button>
-<tyh-button size="small" type="primary">中等按钮</tyh-button>
-<tyh-button type="primary">正常大小</tyh-button>
-<tyh-button size="large" type="primary">大号按钮</tyh-button>
+<qx-button size="mini" type="primary">小型按钮</qx-button>
+<qx-button size="small" type="primary">中等按钮</qx-button>
+<qx-button type="primary">正常大小</qx-button>
+<qx-button size="large" type="primary">大号按钮</qx-button>
 
 <br />
 
-<tyh-button simple size="mini" type="primary">小型按钮</tyh-button>
-<tyh-button simple size="small" type="primary">中等按钮</tyh-button>
-<tyh-button simple type="primary">正常大小</tyh-button>
-<tyh-button simple size="large" type="primary">大号按钮</tyh-button>
+<qx-button simple size="mini" type="primary">小型按钮</qx-button>
+<qx-button simple size="small" type="primary">中等按钮</qx-button>
+<qx-button simple type="primary">正常大小</qx-button>
+<qx-button simple size="large" type="primary">大号按钮</qx-button>
 
 ::: details 显示代码
 
 ```html
-<tyh-button size="mini" type="primary">小型按钮</tyh-button>
-<tyh-button size="small" type="primary">中等按钮</tyh-button>
-<tyh-button type="primary">正常大小</tyh-button>
-<tyh-button size="large" type="primary">大号按钮</tyh-button>
+<qx-button size="mini" type="primary">小型按钮</qx-button>
+<qx-button size="small" type="primary">中等按钮</qx-button>
+<qx-button type="primary">正常大小</qx-button>
+<qx-button size="large" type="primary">大号按钮</qx-button>
 
-<tyh-button simple size="mini" type="primary">小型按钮</tyh-button>
-<tyh-button simple size="small" type="primary">中等按钮</tyh-button>
-<tyh-button simple type="primary">正常大小</tyh-button>
-<tyh-button simple size="large" type="primary">大号按钮</tyh-button>
+<qx-button simple size="mini" type="primary">小型按钮</qx-button>
+<qx-button simple size="small" type="primary">中等按钮</qx-button>
+<qx-button simple type="primary">正常大小</qx-button>
+<qx-button simple size="large" type="primary">大号按钮</qx-button>
 ```
 
 :::
@@ -228,20 +228,20 @@
 
 `loading` 属性可以配置 `loading` 状态下的按钮
 
-<tyh-button loading>默认按钮</tyh-button>
-<tyh-button loading type="primary">主要按钮</tyh-button>
-<tyh-button loading type="success">成功按钮</tyh-button>
-<tyh-button loading type="danger">危险按钮</tyh-button>
-<tyh-button loading type="warning">警告按钮</tyh-button>
+<qx-button loading>默认按钮</qx-button>
+<qx-button loading type="primary">主要按钮</qx-button>
+<qx-button loading type="success">成功按钮</qx-button>
+<qx-button loading type="danger">危险按钮</qx-button>
+<qx-button loading type="warning">警告按钮</qx-button>
 
 ::: details 显示代码
 
 ```html
-<tyh-button loading>默认按钮</tyh-button>
-<tyh-button loading type="primary">主要按钮</tyh-button>
-<tyh-button loading type="success">成功按钮</tyh-button>
-<tyh-button loading type="danger">危险按钮</tyh-button>
-<tyh-button loading type="warning">警告按钮</tyh-button>
+<qx-button loading>默认按钮</qx-button>
+<qx-button loading type="primary">主要按钮</qx-button>
+<qx-button loading type="success">成功按钮</qx-button>
+<qx-button loading type="danger">危险按钮</qx-button>
+<qx-button loading type="warning">警告按钮</qx-button>
 ```
 
 :::
@@ -261,12 +261,12 @@
 | block    | 是否为块级元素 | boolean | ——                                             | false   |
 
 <style scoped>
-.tyh-button-group,
-.tyh-button {
+.qx-button-group,
+.qx-button {
   margin: 5px;
 }
-.tyh-button-group-vertical .tyh-button,
-.tyh-button-group .tyh-button {
+.qx-button-group-vertical .qx-button,
+.qx-button-group .qx-button {
   margin: 0;
 }
 </style>

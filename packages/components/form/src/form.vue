@@ -51,16 +51,16 @@ defineExpose({
 </script>
 <script lang='ts'>
 export default {
-	name: 'QXForm'
+	name: 'QxForm'
 };
 </script>
 
 <style scoped lang='scss'>
-    @import '../../styles/mixin.scss';
-    @include b(form) {
-        margin-top: 20px;
-        box-sizing: border-box;
-        width: 300px;
-        flex-shrink: 0;
-    }
+@import '../../../theme-chalk/src/mixins/mixin.scss';
+@include b(form) {
+	margin-top: 20px;
+	box-sizing: border-box;
+	width: 300px;
+	flex-shrink: 0;
+}
 </style>

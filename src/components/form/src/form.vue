@@ -56,11 +56,11 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-    @import '../../styles/mixin.scss';
-    @include b(form) {
-        margin-top: 20px;
-        box-sizing: border-box;
-        width: 300px;
-        flex-shrink: 0;
-    }
+@import '../../styles/mixin.scss';
+@include b(form) {
+	margin-top: 20px;
+	box-sizing: border-box;
+	width: 300px;
+	flex-shrink: 0;
+}
 </style>

@@ -1,72 +1,72 @@
 <template>
   <div>
-    <QXButton
+    <QxButton
       v-for="example in compExamples"
       :key="example"
       :type="comp==example?'success':'primary'"
       @click="comp=example"
     >
       {{ example }}
-    </QXButton>
+    </QxButton>
   </div>
   <hr>
   <div v-if="comp=='form'">
-    <QXForm
+    <QxForm
       ref="myForm"
       :model="model"
       :rules="rules"
     >
-      <QXFormItem
+      <QxFormItem
         label="用户名："
         prop="username"
       >
-        <QXInput v-model="model.username" />
-      </QXFormItem>
-      <QXFormItem
+        <QxInput v-model="model.username" />
+      </QxFormItem>
+      <QxFormItem
         label="密码："
         prop="password"
       >
-        <QXInput
+        <QxInput
           v-model="model.password"
           type="password"
         />
-      </QXFormItem>
+      </QxFormItem>
       <br>
-      <QXFormItem>
-        <QXButton
+      <QxFormItem>
+        <QxButton
           type="primary"
           @click="login"
         >
           登 录
-        </QXButton>
-      </QXFormItem>
-    </QXForm>
+        </QxButton>
+      </QxFormItem>
+    </QxForm>
   </div>
   <div v-if="comp=='button'">
-    <QXButton type="primary">
+    <QxButton type="primary">
       按钮
-    </QXButton>
-    <QXButton type="success">
+    </QxButton>
+    <QxButton type="success">
       按钮
-    </QXButton>
-    <QXButton>按钮</QXButton>
-    <QXButton size="small">
+    </QxButton>
+    <QxButton>按钮</QxButton>
+    <QxButton size="small">
       按钮
-    </QXButton>
+    </QxButton>
   </div>
   <div v-if="comp=='container'">
-    <QXContainer>
-      <QXHeader>Header</QXHeader>
-      <QXContainer>
-        <QXAside width="200px">
+    <QxContainer direction="vertical">
+      <QxHeader>Header</QxHeader>
+      <QxContainer>
+        <QxAside width="200px">
           Aside
-        </QXAside>
-        <QXContainer>
-          <QXMain>Main</QXMain>
-          <QXFooter>Footer</QXFooter>
-        </QXContainer>
-      </QXContainer>
-    </QXContainer>
+        </QxAside>
+        <QxContainer>
+          <QxMain>Main</QxMain>
+        </QxContainer>
+      </QxContainer>
+      <QxFooter>Footer</QxFooter>
+    </QxContainer>
   </div>
 </template>
 
@@ -104,7 +104,7 @@ function login() {
 </script>
 <style>
 body{
-  width:1000px;
+  width: 100%;
   margin:10px auto;
 }
 .qx-header,
@@ -118,13 +118,13 @@ body{
   background-color: #d3dce6;
   color: #333;
   text-align: center;
-  line-height: 200px;
+  line-height: 400px;
 }
 .qx-main {
   background-color: #e9eef3;
   color: #333;
   text-align: center;
-  line-height: 160px;
+  line-height: 360px;
 }
 body > .qx-container {
   margin-bottom: 40px;

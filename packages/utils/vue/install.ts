@@ -1,6 +1,6 @@
 import { NOOP } from "@vue/shared";
-export const withInstall = (main, extra) => {
-	main.install = (app) => {
+export const withInstall = (main :any, extra?: any) => {
+	main.install = (app: any) => {
 		for (const comp of [main, ...Object.values(extra ?? {})]) {
 			app.component(comp.name, comp);
 		}
@@ -14,6 +14,6 @@ export const withInstall = (main, extra) => {
 };
 
 export const withNoopInstall = (component) => {
-	component.install = NOOP;
+	component.install = () => {};
 	return component;
 };
