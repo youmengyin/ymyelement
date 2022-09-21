@@ -14,18 +14,19 @@
     "test": "vitest",
     "test:coverage": "vitest --coverage",
     "lint": "eslint --fix --ext .js,.vue src",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "release": "standard-version"
   },
   "peerDependencies": {
     "vue": "^3.2.0"
   },
   "dependencies": {
-    "@ymy/tokens": "workspace:*",
-    "@ymy/utils": "workspace:*",
-    "@ymy/docs": "workspace:*",
     "@ymy/components": "workspace:*",
+    "@ymy/docs": "workspace:*",
     "@ymy/hooks": "workspace:*",
     "@ymy/theme-chalk": "workspace:*",
+    "@ymy/tokens": "workspace:*",
+    "@ymy/utils": "workspace:*",
     "async-validator": "^4.2.5",
     "mitt": "^3.0.0",
     "vue": "^3.2.25"
@@ -43,6 +44,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "sass": "^1.52.2",
+    "standard-version": "^9.5.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vitest": "^0.18.1",
