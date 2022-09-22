@@ -1,5 +1,5 @@
 import type { InjectionKey } from "vue";
-import type { Rules, Values } from "async-validator";
+import type { Rules } from "async-validator";
 export type Arrayable<T> = T | T[]
 
 export type FormContext = {
@@ -7,7 +7,8 @@ export type FormContext = {
     rules?: Rules
 }
 export type FormItemContext = {
-    validate: () => Promise<Values>;
+    // validate: () => Promise<Values>;
+    validate: () => Promise<any>;
   };
 
 export type FormType = {

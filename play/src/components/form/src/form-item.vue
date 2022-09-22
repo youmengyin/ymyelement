@@ -46,12 +46,14 @@ function validate() {
 	const schema = new Schema({ [props.prop]: rules });
 	return schema.validate({ [props.prop]: values }).then((data) => {
 		error.value = '';
+		Promise.resolve(data);
 	}).catch(({ errors, fields }) => {
 		if (errors) {
 			error.value = errors[0].message || "校验错误";
 		} else {
 			error.value = '';
 		}
+		Promise.reject();
 	});
 }
 

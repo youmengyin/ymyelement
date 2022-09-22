@@ -1,4 +1,4 @@
-import { NOOP } from "@vue/shared";
+// import { NOOP } from "@vue/shared";
 export const withInstall = (main :any, extra?: any) => {
 	main.install = (app: any) => {
 		for (const comp of [main, ...Object.values(extra ?? {})]) {
@@ -13,7 +13,8 @@ export const withInstall = (main :any, extra?: any) => {
 	return main;
 };
 
-export const withNoopInstall = (component) => {
+export const withNoopInstall = (component: any) => {
+	// eslint-disable-next-line @typescript-eslint/no-empty-function
 	component.install = () => {};
 	return component;
 };

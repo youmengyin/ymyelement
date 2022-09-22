@@ -1,0 +1,12 @@
+{
+    "name": "@ymy/play",
+    "private": true,
+    "version": "0.0.1",
+    "main": "index.html",
+    "scripts": {
+      "dev": "vite",
+      "build": "vue-tsc --noEmit && vite build",
+      "preview": "vite preview"
+    }
+}
+    
