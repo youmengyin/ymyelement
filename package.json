@@ -4,14 +4,16 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "doc"
+    "doc",
+    "play"
   ],
   "scripts": {
-    "build": "pnpm clean && vite build && pnpm run build:umd && pnpm run build:lib && node ./scripts/copyCommonInfo.js",
+    "build": "pnpm clean && vite build && pnpm run build:umd && pnpm run build:lib && pnpm run build:theme && node ./scripts/copyCommonInfo.js",
     "build:es": "vite build --mode=production ",
     "build:dev": "vue-tsc --noEmit && vite build --mode=production",
     "build:umd": "vue-tsc --noEmit && vite build --mode=production --config vite.config.umd.ts",
     "build:lib": "vue-tsc --noEmit && vite build --mode=production --config vite.config.lib.ts",
+    "build:theme": "pnpm run -C packages/theme-chalk build",
     "clean": "rm -rf dist",
     "dev": "vite",
     "docs:dev": "pnpm run -C docs docs:dev",
@@ -58,6 +60,14 @@
     "vite": "^2.9.9",
     "vitest": "^0.18.1",
     "vue-tsc": "^0.34.7"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "pnpm":{
+    "peerDependencyRules": {
+      "ignoreMissing": ["react", "react-dom"]
+    }
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"

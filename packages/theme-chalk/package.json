@@ -2,8 +2,20 @@
     "name": "@ymy/theme-chalk",
     "private": true,
     "license": "MIT",
-    "main": "index.scss",
-    "peerDependencies": {
-      "vue": "^3.2.0"
+    "main": "index.css",
+    "scripts": {
+        "build": "gulp --require @esbuild-kit/cjs-loader",
+        "clean": "rm -rf './dist"
+    },
+    "engines": {
+        "node": ">=14"
+    },
+    "devDependencies": {
+        "@esbuild-kit/cjs-loader": "^2.3.3",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0"
     }
 }
